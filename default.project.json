@@ -1,0 +1,43 @@
+{
+  "name": "StealTheirHouses",
+
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+
+      "Remotes": {
+        "$className": "Folder",
+
+        "DropItem": {
+          "$className": "RemoteEvent"
+        }
+      }
+    },
+
+    "ServerScriptService": {
+      "Main": {
+        "$path": "src/server/Main.server.luau"
+      },
+
+      "Services": {
+        "$path": "src/server/Services"
+      },
+
+      "Handlers": {
+        "$path": "src/server/Handlers"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Controllers": {
+          "$path": "src/client/Controllers"
+        }
+      }
+    }
+  }
+}
