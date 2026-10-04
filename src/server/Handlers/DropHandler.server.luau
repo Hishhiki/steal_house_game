@@ -1,10 +1,12 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerScriptService = game:GetService("ServerScriptService")
 
-local dropEvent = ReplicatedStorage.Remotes.DropItem
+local remotes = ReplicatedStorage:WaitForChild("Remotes")
+local dropEvent = remotes:WaitForChild("DropItem")
+local services = ServerScriptService:WaitForChild("Services")
 
 local CarryService = require(
-	ServerScriptService.Services.CarryService
+	services:WaitForChild("CarryService")
 )
 
 dropEvent.OnServerEvent:Connect(function(player)

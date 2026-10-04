@@ -1,8 +1,21 @@
-# Project place file
-/rb.rbxlx
+# Local place files and generated builds (src/**/*.rbxm are source assets)
+/*.rbxl
+/*.rbxlx
+
+# Local Markdown notes; keep repository documentation
+*.md
+!README.md
+!AGENTS.md
+
+# Temporary Studio import files
+/.studio-import/
 
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
 
 sourcemap.json
+
+# Local OS files
+.DS_Store
+Thumbs.db
